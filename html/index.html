@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="../style/theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+     <div id="calculator-body" class="center">
+       <div id="displayBox">
+          <button id="historyBtn" style="font-size: 25px;"><i style="font-size:24px" class="fa">&#xf1da;</i></button>
+          <br><br>
+          <div class="displayAmbient"></div>
+          <div class="displaySpace">0</div>
+   </div>
+       <button id="percentage" class="symbuttons" onclick="getSymbols(this)">%</button>
+       <button id="ce" class="others" onclick="clearScreen()">CE</button>
+       <button id="c" class="others" onclick="clearScreen()">C</button>
+       <button id="bkspc" class="others" onclick="bkspc()">&leftarrow;</button>
+       <br>
+       <button id="reciprocal" class="others" onclick="reciprocal()">1/x</button>
+       <button id="square" class="others" onclick="square()">x²</button>
+       <button id="sqrt" class="others" onclick="sqrt()">&radic;</button>
+       <button id="divide" class="symbuttons" onclick="getSymbols(this)">/</button>
+       <br>
+       <button id="seven" class="numbuttons" onclick="getNumber(this)">7</button>
+       <button id="eight" class="numbuttons" onclick="getNumber(this)">8</button>
+       <button id="nine" class="numbuttons" onclick="getNumber(this)">9</button>
+       <button id="mul" class="symbuttons" onclick="getSymbols(this)">*</button>
+       <br>
+       <button id="four" class="numbuttons" onclick="getNumber(this)">4</button>
+       <button id="five" class="numbuttons" onclick="getNumber(this)">5</button>
+       <button id="six" class="numbuttons" onclick="getNumber(this)">6</button>
+       <button id="minus" class="symbuttons" onclick="getSymbols(this)">-</button>
+       <br>
+       <button id="one" class="numbuttons" onclick="getNumber(this)">1</button>
+       <button id="two" class="numbuttons" onclick="getNumber(this)">2</button>
+       <button id="three" class="numbuttons" onclick="getNumber(this)">3</button>
+       <button id="plus" class="symbuttons" onclick="getSymbols(this)">+</button>
+       <br>
+       <button id="plusOrminus" class="plusOrminus" onclick="plusOrminus()">+/-</button>
+       <button id="zero" class="numbuttons" onclick="getNumber(this)">0</button>
+       <button id="dot" class="numbuttons" onclick="getNumber(this)">.</button>
+       <button id="equal" class="eqbuttons" onclick="equal()">=</button>
+       <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <button id="trashBtn" class="trash" onclick="deleteHistory()"><i class="fa fa-trash"></i></button>
+      </div>
+          <div class="modal-body">
+            <p id="historyElement" class="historyElement"></p>
+      </div>
+    </div>
+ </div>
+ </div>
+     <script type="text/javascript" src="../script/script.js"></script>
+</body>
+</html>
